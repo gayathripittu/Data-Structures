@@ -8,7 +8,28 @@ The challenge is to determine the shortest path in terms of distance (flight len
 
 ## Approach
 
-The project uses Dijkstra's algorithm, which systematically explores nodes, always selecting the node with the shortest known distance from the start.
+**Graph Initialization:** The graph, representing an airport network, is initialized with nodes (airports) and weighted edges (flight routes). An adjacency list or matrix is used for efficient data representation.
+
+**Set Up Data Structures:** A priority queue is set up to manage nodes during the algorithm's execution. Additional structures store the shortest distance to each node from the source and track the nodes' visitation status.
+
+**Implementing Dijkstra's Algorithm:**
+ * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
+
+* Initialize all node distances as infinite, except for the source node, set to zero.
+* Insert the source node into the priority queue.
+* While the priority queue is not empty, repeat the following:
+     * Remove the node with the smallest distance from the priority queue.
+     * For each unvisited neighbor of this node, calculate the distance from the source. If 
+       this distance is less than the currently known distance, update it.
+     * Mark the node as visited.
+
+**Path Reconstruction:** After reaching the destination or exhausting all nodes, the shortest path is reconstructed from the source to the destination using the stored data.
+
+**Performance Analysis:** Execution time is measured and analyzed, providing insights into the algorithm's efficiency across various graph sizes.
 
 ## Input and Output
 
@@ -33,6 +54,4 @@ Edges were assigned random weights between 300 to 2000 miles. The algorithm's pe
 
 ## Results
 
-The results of Project 2C demonstrate the BFS algorithm's effectiveness in solving the minimum-hop path problem in airport network graphs. Tests on graphs of varying sizes showed that the algorithm's performance aligns with its theoretical time complexity of O(V+E), where V is the number of vertices and E is the number of edges, confirming its efficiency and scalability for practical applications. 
-
-This project highlights the BFS algorithm's utility in real-world graph problems.The experimental results confirmed the theoretical time complexity of O(V+E), where V is the number of vertices and E is the number of edges
+Dijkstra's algorithm was successfully applied to determine the shortest paths in graph-based airport networks. The results, consistent across different graph sizes, affirm the algorithm's efficiency and reliability. This underscores the practical relevance of Dijkstra's algorithm in solving real-world network routing problems, demonstrating its applicability and robustness in complex scenarios like optimizing flight routes.
