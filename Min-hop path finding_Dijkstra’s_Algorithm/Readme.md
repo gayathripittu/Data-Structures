@@ -13,11 +13,6 @@ The challenge is to determine the shortest path in terms of distance (flight len
 **Set Up Data Structures:** A priority queue is set up to manage nodes during the algorithm's execution. Additional structures store the shortest distance to each node from the source and track the nodes' visitation status.
 
 **Implementing Dijkstra's Algorithm:**
- * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
 
 * Initialize all node distances as infinite, except for the source node, set to zero.
 * Insert the source node into the priority queue.
