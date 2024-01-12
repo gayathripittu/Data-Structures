@@ -1,34 +1,35 @@
-# BFS Min-Hop Path Finder
+# Dijkstra's Algorithm for Shortest Path
 
 ## Overview
 
-This Project aims to implement and analyze the Breadth-First Search (BFS) algorithm in a graph representing a network of airports and flight routes. The project's goal is to find the minimum-hop path between two nodes in the graph.
+This Project aims to implement Dijkstra's algorithm to find the shortest path in a graph representing a network of airports and flight routes. The focus is on computing the shortest path based on flight lengths (weights) between two airports.
 
-The challenge is to determine the shortest path, in terms of hops, between a given source and destination in a directed graph. This problem simulates finding the least number of flights needed to travel from one airport to another.
+The challenge is to determine the shortest path in terms of distance (flight length) between a given source and destination in a directed graph. This simulates finding the shortest flight route in terms of miles between two airports.
 
 ## Approach
 
-The algorithm starts at the root node (source airport) and explores nodes level by level, ensuring no node is revisited. Nodes are colored to track their visitation status: White (unvisited), Gray (visited but not fully explored), and Black (fully explored).
+The project uses Dijkstra's algorithm, which systematically explores nodes, always selecting the node with the shortest known distance from the start.
 
 ## Input and Output
 
 #### Input: 
 
-A directed graph with specified nodes (airports) and edges (flight routes), and designated source and destination airports.
+A directed graph with nodes (airports), edges (flight routes), and weights (flight lengths in miles).
+
 #### Output: 
 
-The shortest path (minimum-hop) between the source and destination, and the execution time of the algorithm.
+The shortest path in terms of distance between the source and destination airports, along with the algorithm's execution time.
 
 ## Graph Sizes and Experimental Analysis
 
 Four graphs of increasing sizes were tested:
 
-- 25 nodes and 50 edges
-- 50 nodes and 200 edges
-- 100 nodes and 800 edges
-- 200 nodes and 3200 edges
+- G1: 25 nodes, 50 edges
+- G2: 50 nodes, 200 edges
+- G3: 100 nodes, 800 edges
+- G4: 200 nodes, 3200 edges
   
-The graphs were randomly generated. The algorithm's performance was evaluated based on average execution times over multiple runs with different source and destination combinations.
+Edges were assigned random weights between 300 to 2000 miles. The algorithm's performance was evaluated for execution time and correctness.
 
 ## Results
 
