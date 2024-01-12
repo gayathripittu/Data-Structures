@@ -8,7 +8,17 @@ The challenge is to determine the shortest path, in terms of hops, between a giv
 
 ## Approach
 
-The algorithm starts at the root node (source airport) and explores nodes level by level, ensuring no node is revisited. Nodes are colored to track their visitation status: White (unvisited), Gray (visited but not fully explored), and Black (fully explored).
+**Graph Representation:** The directed graph, representing airports and flight routes, is implemented using adjacency lists. This data structure efficiently handles sparse graphs as is often the case with airport networks.
+
+**BFS Algorithm Customization:** The standard BFS algorithm is adapted to prioritize the minimum number of hops (edges) between nodes. This involves tracking the level of each node in the BFS tree to determine the shortest path in hops.
+
+**Node Visitation Logic:** Nodes are marked with different statuses (unvisited, visited but not explored, and fully explored) to prevent revisiting and ensure efficient path finding.
+
+**Path Reconstruction:** After reaching the destination node, the path is reconstructed from the BFS tree, ensuring the route with the minimum hops is identified.
+
+**Execution Time Measurement:** The algorithm's performance is measured by calculating the execution time for each run, allowing for analysis against different graph sizes.
+
+**Testing with Varying Graph Sizes:** The implementation is tested on four differently sized graphs to evaluate scalability and performance consistency.
 
 ## Input and Output
 
@@ -32,6 +42,5 @@ The graphs were randomly generated. The algorithm's performance was evaluated ba
 
 ## Results
 
-The results of Project 2C demonstrate the BFS algorithm's effectiveness in solving the minimum-hop path problem in airport network graphs. Tests on graphs of varying sizes showed that the algorithm's performance aligns with its theoretical time complexity of O(V+E), where V is the number of vertices and E is the number of edges, confirming its efficiency and scalability for practical applications. 
+The results of the project demonstrate the effectiveness of the BFS algorithm in solving the minimum-hop path problem in airport network graphs. Tests on graphs of varying sizes showed that the algorithm's performance aligns with its theoretical time complexity of O(V+E), where V is the number of vertices and E is the number of edges. This confirms its efficiency and scalability for practical applications.
 
-This project highlights the BFS algorithm's utility in real-world graph problems.The experimental results confirmed the theoretical time complexity of O(V+E), where V is the number of vertices and E is the number of edges
