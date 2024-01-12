@@ -1,14 +1,16 @@
-Project 1: Experimental Analysis on Sorting Algorithms
-Overview
+#  Experimental Analysis on Sorting Algorithms
+
+## Overview
 This project involves the implementation and detailed performance analysis of various sorting algorithms. Our goal is to understand the efficiency of each algorithm in different scenarios.
 
-Implemented Algorithms
+## Implemented Algorithms
 Insertion Sort
 Merge Sort
 Heapsort
 Quick Sort
 3-way Merge Sort 
-Analysis Focus
+
+## Analysis Focus
 We analyze the algorithms based on:
 
 Running time
@@ -18,7 +20,7 @@ Data and Output
 Input: Diverse datasets of varying sizes.
 Output: Detailed statistics including size of input, number of comparisons, and execution time.
 
-The key findings are:
+## The key findings are:
 
 Insertion Sort: Highly efficient for small or already sorted data sets, but less effective for larger, unsorted data.
 Merge Sort & 3-way Merge Sort: Both perform well on larger data sets, with 3-way Merge Sort being theoretically more efficient but slower in practice due to increased comparisons.
