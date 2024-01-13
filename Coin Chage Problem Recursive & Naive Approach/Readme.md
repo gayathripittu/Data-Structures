@@ -2,7 +2,7 @@
 
 ## Overview
 
-The "Change Making Problem Analysis with Naive & Greedy Approach" project explores the classic problem in computer science, focusing on finding the minimum number of coins needed to make change for a given amount using a set of coin denominations. It involves the implementation and analysis of solutions specifically using Dynamic Programming. The primary goal is to examine the efficiency and performance of the Dynamic Programming approach in solving this practical problem, which finds applications in scenarios such as vending machines or financial software.
+The "Change Making Problem Analysis with Naive & Greedy Approach" project explores the classic problem in computer science, focusing on finding the minimum number of coins needed to make change for a given amount using a set of coin denominations. It involves the implementation and analysis of solutions specifically using Greedy Algorithm. The project explores the practicality and efficiency of the Greedy Algorithm in solving this problem and compares its performance with other algorithms(Naive Approach and Dynamic Programming).
 
 ## Problem Description
 
@@ -29,7 +29,7 @@ The project uses various test cases with different coin systems, including:
 
 ## Implemented Algorithm
 
-**Dynamic Programming Solution:** Utilizes a bottom-up dynamic programming approach to find the minimum number of coins needed for making change. Expected time complexity: O(k.n)
+**Greedy Algorithm Solution:** Utilizes a greedy strategy and recursion method, selecting the highest-denomination coins first to minimize the number of coins needed. Expected time complexity: O(k)
 
 ## Test the Algorithm solution on the following inputs:
 
@@ -40,3 +40,9 @@ The project uses various test cases with different coin systems, including:
 ## Output Format
 
 The output should include a list of integers representing the coins used and the time required to compute the solution.
+
+## Key Findings
+
+**Dynamic Programming:** Showed optimal performance in terms of both time complexity and accuracy.
+**Greedy Algorithm:** While faster in some cases, it does not always guarantee the optimal solution.
+**Recursive Approach:** Less efficient due to its exponential time complexity, useful for understanding the problem's nature.
