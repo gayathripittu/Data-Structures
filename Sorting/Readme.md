@@ -46,4 +46,11 @@ Output: Detailed statistics including size of input, number of comparisons, and 
 **Heap Sort:** Ideal for large data sets and limited space, offering a balance between speed and space efficiency.
 
 ![image](https://github.com/gayathripittu/Data-Structures/assets/48981111/4c0cb0f0-d80b-44e1-be92-b22887873618)
+![image](https://github.com/gayathripittu/Data-Structures/assets/48981111/064d9d32-fb1c-4db9-ae28-d678553166de)
+![image](https://github.com/gayathripittu/Data-Structures/assets/48981111/11b7ce59-23da-43d1-87ba-9973a7a8d7e1)
+![image](https://github.com/gayathripittu/Data-Structures/assets/48981111/66626b69-605f-4111-a634-1bf0c8cde854)
+
+
+
+
 
