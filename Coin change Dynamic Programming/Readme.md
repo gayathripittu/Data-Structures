@@ -44,6 +44,8 @@ The output should include a list of integers representing the coins used and the
 ## Key Findings
 
 **Dynamic Programming:** Showed optimal performance in terms of both time complexity and accuracy.
+
 **Greedy Algorithm:** While faster in some cases, it does not always guarantee the optimal solution.
+
 **Recursive Approach:** Less efficient due to its exponential time complexity, useful for understanding the problem's nature.
 
