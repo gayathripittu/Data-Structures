@@ -33,9 +33,9 @@ The project uses various test cases with different coin systems, including:
 
 ## Test the Algorithm solution on the following inputs:
 
-* 1. Test on the US coin system with k = 4 and denominations [1, 5, 10, 25].
+* Test on the US coin system with k = 4 and denominations [1, 5, 10, 25].
 
-* 2. Test on a custom coin system with 5 denominations (penny, nickel, dime, 23 cents, quarter) with k = 5 and denominations [1, 5, 10, 23, 25]
+* Test on a custom coin system with 5 denominations (penny, nickel, dime, 23 cents, quarter) with k = 5 and denominations [1, 5, 10, 23, 25]
 
 ## Output Format
 
@@ -44,5 +44,7 @@ The output should include a list of integers representing the coins used and the
 ## Key Findings
 
 **Dynamic Programming:** Showed optimal performance in terms of both time complexity and accuracy.
+
 **Greedy Algorithm:** While faster in some cases, it does not always guarantee the optimal solution.
+
 **Recursive Approach:** Less efficient due to its exponential time complexity, useful for understanding the problem's nature.
